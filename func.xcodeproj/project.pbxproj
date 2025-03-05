@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		37B761412D784FB8009D3747 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 37B761402D784FB8009D3747 /* Fakery */; };
-		37B761472D78544D009D3747 /* Utilis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B761462D785448009D3747 /* Utilis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +26,6 @@
 		37B761352D784F87009D3747 /* func */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = func; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B761442D7853C6009D3747 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		37B761452D7853E4009D3747 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		37B761462D785448009D3747 /* Utilis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -53,7 +51,6 @@
 		37B7612C2D784F87009D3747 = {
 			isa = PBXGroup;
 			children = (
-				37B761462D785448009D3747 /* Utilis.swift */,
 				37B761452D7853E4009D3747 /* README.md */,
 				37B761442D7853C6009D3747 /* LICENSE */,
 				37B761372D784F87009D3747 /* func */,
@@ -137,7 +134,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B761472D78544D009D3747 /* Utilis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
