@@ -29,14 +29,15 @@ let AGE: Int = Int.random(in: 6...25)
 personInfo(name: NAME, age: AGE)
 print(SEPERATOR)
 
-let (s, d, p, q): (Double, Double, Double, Double) = calculation(x: Double(X), y: Double(Y))
+let (s, d, p, q): (Double, Double, Double, Double) = calculation(
+    x: Double(X), y: Double(Y))
 print("\(X) + \(Y) = \(s)")
 print("\(X) - \(Y) = \(d)")
 print("\(X) * \(Y) = \(p)")
 print("\(X) / \(Y) = \(q)")
 print(SEPERATOR)
 
-let nums: [Int] =  [5, 10, 3, 7, 2]
+let nums: [Int] = [5, 10, 3, 7, 2]
 let minValue = getMin(array: nums)
 print("The min value in the array is \(minValue)")
 print(SEPERATOR)
@@ -74,4 +75,30 @@ var number: Int = Int.random(in: 1...10)
 print(number)
 squareNumIO(singleNumber: &number)
 print(number)
+print(SEPERATOR)
+
+sayHi()
+print(SEPERATOR)
+
+let person: String = faker.name.firstName()
+greetPerson(person)
+print(SEPERATOR)
+
+let sub: Int = subtraction(M, N)
+print("\(M) - \(N) = \(sub)")
+print(SEPERATOR)
+
+greeting(action: greetStart)
+print(SEPERATOR)
+
+greetings(startAction: greetStart, endAction: greetEnd)
+print(SEPERATOR)
+
+var names: [String] = []
+for _ in 1...10 {
+    let name: String = faker.name.firstName()
+    names.append(name)
+}
+print(names)
+names.forEach({ name in print(name) })
 print(SEPERATOR)

@@ -23,18 +23,20 @@ func personInfo(name: String, age: Int) {
     print("\(name)'s age is \(age)")
 }
 
-func calculation(x: Double, y: Double) -> (s: Double, d: Double, p: Double, q: Double) {
+func calculation(x: Double, y: Double) -> (
+    s: Double, d: Double, p: Double, q: Double
+) {
     return (x + y, x - y, x * y, x / y)
 }
 
-func getMin(array nums: Array<Int>) -> Int {
+func getMin(array nums: [Int]) -> Int {
     guard let num = nums.min() else {
         fatalError("The array is empty, we cannot get the min value in it.")
     }
     return num
 }
 
-func getMax(_ nums: Array<Int>) -> Int? {
+func getMax(_ nums: [Int]) -> Int? {
     return nums.max()
 }
 
@@ -50,7 +52,7 @@ func sumNumbers(intArray nums: [Int]) -> Int {
     var sumValue: Int = 0
     nums.forEach { num in sumValue += num }
     return sumValue
-//    return nums.reduce(0, +)
+    //    return nums.reduce(0, +)
 }
 
 func squareNum(singleInt num: Int = Int.random(in: 1...10)) -> Int {
@@ -60,4 +62,23 @@ func squareNum(singleInt num: Int = Int.random(in: 1...10)) -> Int {
 
 func squareNumIO(singleNumber num: inout Int) {
     num *= num
+}
+
+let sayHi: () -> Void = { print("Hi World!") }
+
+let greetPerson: (String) -> Void = { (name: String) in print("Hello, \(name)!")
+}
+
+let subtraction: (Int, Int) -> Int = { (X: Int, Y: Int) in X - Y }
+
+let greetStart: () -> Void = { print("Take off your hat.") }
+let greetEnd: () -> Void = { print("Put on your hat.") }
+func greeting(action closure: () -> Void) {
+    closure()
+    print("Hello, my friend!")
+}
+func greetings(startAction start: () -> Void, endAction end: () -> Void) {
+    start()
+    print("Oh, my dear!")
+    end()
 }
